@@ -10,10 +10,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-dark">
+  <div class="container-fluid text-light" style="height: 100vh">
 
   <!-- navbar start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mantap shop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,6 +25,9 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/product">Product</a>
@@ -38,7 +42,7 @@
   <!-- navbar end -->
 
   <!-- carousel start -->
-  <div class="container-fluid bg-dark mt-5 pb-3 pe-0 ps-0">
+  <div class="container-fluid bg-dark mt-0 pb-3 pe-0 ps-0">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
       <div class="carousel-indicators align-content-center">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -86,150 +90,127 @@
   <!-- carousel end -->
 
   <!-- card start -->
-  <div class="container">
-    <div class="row">
+    <div class="row text-light">
       <div class="col text-center my-3">
-        <h3>Product</h3>
+        <h3>PRODUCT</h3>
       </div>
     </div>
-    <div class="row mb-4">
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+    <div class="row text-dark mt-2 mx-2" style="padding-bottom: 80px">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aspernatur
               similique vel, repellat aut culpa animi esse natus eaque libero maiores iste, consequuntur architecto ad
               autem iusto qui praesentium asperiores. Exercitationem pariatur quae quia tempora provident vero aliquam
               excepturi atque, sit consectetur totam temporibus laboriosam architecto sapiente, obcaecati nulla dolor
               amet voluptate. Pariatur saepe recusandae natus consequatur eveniet nemo accusamus, aut debitis aliquid
               fuga!</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <button href="#" class="btn btn-primary mt-3">Go
-              somewhere</button>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go
+              somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat eius
               commodi voluptas. Nesciunt, vero itaque ducimus unde facere culpa cupiditate voluptas perferendis
               veritatis. Recusandae, ipsa corrupti animi non dolore facilis consectetur harum rem culpa blanditiis in,
               nesciunt, sunt natus! Rem id iusto, consectetur molestiae eos architecto minus aperiam error aliquid
               ratione doloribus!</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat obcaecati illum
               sapiente eaque illo aliquam! Doloribus numquam vel commodi debitis in ut aliquam earum voluptatem itaque,
               provident similique! Hic ducimus, doloribus doloremque nemo officiis est.</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nobis repellendus
               molestiae nihil laborum aperiam consectetur laudantium veritatis sit iste. Sed possimus quos accusantium
               repellendus eos rerum hic delectus eum reprehenderit earum, voluptates non, harum repudiandae, molestias
               iusto deleniti ratione.</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- card line 2 -->
-
-    <div class="row mt-3 mb-5 pb-4">
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia tenetur modi eos?
               Quibusdam quod, est non deleniti iure dolore laudantium.</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sunt fugiat
               reprehenderit at facere eligendi itaque nisi, rem impedit doloribus obcaecati.</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, placeat
               perferendis
               mollitia obcaecati reprehenderit voluptate natus a nulla soluta in quas. Dolor, unde ad magni minus
               provident nobis atque veritatis voluptas ullam illo est quam itaque vitae dolorem dolores quisquam nihil
               dolore ipsum. Quas, facilis esse error unde quidem ipsam ipsa?</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
+            <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+            <a href="#" class="btn btn-warning d-block">Go somewhere</a>
           </div>
         </div>
       </div>
-      <div class="col mb-4">
-        <div class="card" style="min-height: 16rem;">
+      <div class="col-sm-3 g-4">
+        <div class="card">
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title text-center">Card title</h5>
             <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum recusandae facilis
               repellendus vel delectus, dolores saepe nulla est expedita nesciunt corporis eius temporibus. Asperiores
               quas voluptatibus deleniti iste est hic cum tempora culpa dolorem quia fugit, corrupti ipsa harum, vero
               voluptates totam? Fuga, atque! Maxime quasi veniam id. Sit, sequi suscipit numquam pariatur dolorem dicta.
               Maxime accusamus quibusdam nulla. Impedit adipisci quaerat distinctio enim, laborum aperiam provident.</p>
-
-            <p onclick="readMore(this)" class="btn-link">Read More</p>
-
-            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
-          </div>
+              <p onclick="readMore(this)" class="btn-link" style="cursor: pointer">Read More</p>
+              <a href="#" class="btn btn-warning d-block">Go somewhere</a>
+            </div>
         </div>
       </div>
     </div>
-  </div>
-
+    </div>
   <!-- card end -->
 
   <!-- section start -->
@@ -245,6 +226,7 @@
 
   <script src="/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
 </body>
 
 </html>
