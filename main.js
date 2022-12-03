@@ -1,4 +1,4 @@
-let noOfCharac = 150;
+let noOfCharac = 75;
 let contents = document.querySelectorAll('.content');
 contents.forEach((content) => {
   if (content.textContent.length < noOfCharac) {
@@ -7,7 +7,7 @@ contents.forEach((content) => {
     let displayText = content.textContent.slice(0, noOfCharac);
     let moreText = content.textContent.slice(noOfCharac);
     // console.log(displayText);
-    content.innerHTML = `${displayText}<span class="dots">...</span><span class="hide more">${moreText}</span>`;
+    content.innerHTML = `${displayText}<span class="dots">..</span><span class="hide more">${moreText}</span>`;
   }
 });
 
