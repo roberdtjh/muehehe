@@ -16,7 +16,7 @@ function readMore(btn) {
   //   console.log(post);
   post.querySelector('.dots').classList.toggle('hide');
   post.querySelector('.more').classList.toggle('hide');
-  btn.textContent == 'Read More' ? (btn.textContent = 'Read Less') : (btn.textContent = 'Read More');
+  btn.textContent == 'Read More' ? btn.textContent = 'Read Less' : btn.textContent = 'Read More';
 }
 
 // function myFunction() {
