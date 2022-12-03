@@ -11,8 +11,9 @@
 </head>
 
 <body>
+
   <!-- navbar start -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Mantap shop</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -23,9 +24,6 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/product">Product</a>
@@ -52,21 +50,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/img/1146667.jpg" class="d-block w-100" alt="..." style="height: 400px;">
+          <img src="/img/1146667.jpg" class="d-block w-100" alt="..." style="height: 150%;">
           <div class="carousel-caption d-none d-md-block text-dark">
             <h5>KAMU MENCARI ORGAN?</h5>
             <p>Kamu bisa membilinya disini</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/1146765.png" class="d-block w-100" alt="..." style="height: 400px;">
+          <img src="/img/1146765.png" class="d-block w-100" alt="..." style="height: 150;">
           <div class="carousel-caption d-none d-md-block text-dark">
             <h5>KAMU MENCARI ORGAN?</h5>
             <p>Kamu bisa membilinya disini</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/1147279.png" class="d-block w-100" alt="..." style="height: 400px;">
+          <img src="/img/1147279.png" class="d-block w-100" alt="..." style="height: 150;">
           <div class="carousel-caption d-none d-md-block text-dark">
             <h5>KAMU MENCARI ORGAN?</h5>
             <p>Kamu bisa membilinya disini</p>
@@ -100,11 +98,34 @@
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam delectus assumenda
-              voluptatibus est tempore corporis quo quas aperiam non doloribus nulla, quasi fugiat tenetur quaerat quod
-              ullam ad hic earum?</p>
-            <button onclick="readMore(this)">Read More</button>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="content mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum aspernatur
+              similique vel, repellat aut culpa animi esse natus eaque libero maiores iste, consequuntur architecto ad
+              autem iusto qui praesentium asperiores. Exercitationem pariatur quae quia tempora provident vero aliquam
+              excepturi atque, sit consectetur totam temporibus laboriosam architecto sapiente, obcaecati nulla dolor
+              amet voluptate. Pariatur saepe recusandae natus consequatur eveniet nemo accusamus, aut debitis aliquid
+              fuga!</p>
+
+            <p onclick="readMore(this)" class="btn-link">Read More</p>
+
+            <button href="#" class="btn btn-primary mt-3">Go
+              somewhere</button>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card" style="min-height: 16rem;">
+          <img src="/img/g1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="content mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellat eius
+              commodi voluptas. Nesciunt, vero itaque ducimus unde facere culpa cupiditate voluptas perferendis
+              veritatis. Recusandae, ipsa corrupti animi non dolore facilis consectetur harum rem culpa blanditiis in,
+              nesciunt, sunt natus! Rem id iusto, consectetur molestiae eos architecto minus aperiam error aliquid
+              ratione doloribus!</p>
+
+            <p onclick="readMore(this)" class="btn-link">Read More</p>
+
+            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -170,10 +191,12 @@
           <img src="/img/g1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.<span id="dots">...</span><span id="more">
-              </span><span onclick="myFunction()" id="myBtn" class="btn-link">readmore</span></p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="content mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque sunt fugiat
+              reprehenderit at facere eligendi itaque nisi, rem impedit doloribus obcaecati.</p>
+
+            <p onclick="readMore(this)" class="btn-link">Read More</p>
+
+            <a href="#" class="btn btn-primary mt-3">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -203,6 +226,11 @@
       </div>
     </div>
   </div>
+
+  <!-- card end -->
+
+  <!-- section start -->
+  <!-- section end -->
 
   <!-- footer start -->
   <footer class="footer fixed-bottom bg-warning text-dark">
